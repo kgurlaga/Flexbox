@@ -3,3 +3,18 @@ body {
 	font-size: 18px;
 	color: white;
 }
+
+.container{
+	margin: 0 auto;
+	max-width: 1000px;
+	border: 2px solid red;
+}
+.red{
+	background-color: lightcoral;
+}
+.green{
+	background-color: seagreen;
+}
+.blue{
+	background-color: skyblue;
+}
