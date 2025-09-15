@@ -4,17 +4,51 @@ body {
 	color: white;
 }
 
+main > *{
+	padding: 10px;
+	text-align: center;
+}
+
 .container{
 	margin: 0 auto;
 	max-width: 1000px;
 	border: 2px solid red;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
+
 .red{
 	background-color: lightcoral;
+	width: 100%;
 }
+
 .green{
 	background-color: seagreen;
+	width: 50%;
 }
+
 .blue{
 	background-color: skyblue;
+	width: 50%;
+}
+
+nav{
+	background-color: chocolate;
+	width: 20%;
+}
+
+article{
+	background-color: blueviolet;
+	width: 60%;
+}
+
+aside{
+	background-color: darkcyan;
+	width: 20%;
+}
+
+footer{
+	background-color: crimson;
+	width: 100%;
 }
