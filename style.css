@@ -5,7 +5,7 @@ body {
 }
 
 main > *{
-	padding: 10px;
+	/* padding: 10px; */
 	text-align: center;
 }
 
@@ -14,41 +14,52 @@ main > *{
 	max-width: 1000px;
 	border: 2px solid red;
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	flex-direction: column;
+	/*flex-wrap: wrap; */
+	gap: 10px;
+	justify-content: center;
+}
+
+.row1, .row2{
+	display: flex;
+	gap: 10px;
 }
 
 .red{
 	background-color: lightcoral;
-	width: 100%;
+	flex-basis: 100%;
 }
 
 .green{
 	background-color: seagreen;
-	width: 50%;
+	flex-basis: 48%;
 }
 
 .blue{
 	background-color: skyblue;
-	width: 50%;
+	/* flex-basis: 45%;
+	flex-grow: 1; */
+	flex: 1 1 45%;
 }
 
 nav{
 	background-color: chocolate;
-	width: 20%;
+	flex-basis: 20%;
 }
 
 article{
 	background-color: blueviolet;
-	width: 60%;
+	 flex-basis: 60%;
+	/*flex-grow: 1; 
+	flex: 1 0 55%;*/
 }
 
 aside{
 	background-color: darkcyan;
-	width: 20%;
+	flex-basis: 20%;
 }
 
 footer{
 	background-color: crimson;
-	width: 100%;
+	flex-basis: 100%;
 }
