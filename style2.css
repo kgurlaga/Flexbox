@@ -8,6 +8,7 @@ body {
     color: #1F324B;
     font-family: Arial, Tahoma, sans-serif;
     font-size: 18px;
+    padding-top: 100px;
 }
 
 article p{
@@ -48,6 +49,7 @@ article p{
     transition: all 0.2s ease-in-out;
     display: block;
     padding: 29px 20px;
+    text-align: center;
 }
 .menu a:hover{
     background-color: burlywood;
@@ -57,4 +59,29 @@ article p{
     list-style: none;
     display: flex;
     
+}
+
+.menu-open, .menu-close{
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width: 750px){
+    .menu-open{
+        display: block;
+    }
+    .menu{
+        position: fixed;
+        top: 80px;
+        right: 0;
+        display: none;
+    }
+
+    .menu ul{
+        flex-direction: column;
+        height: 100vh;
+        background-color: #323232;
+        width: 200px;
+    }
 }
